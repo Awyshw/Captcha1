@@ -1,22 +1,22 @@
-±¾ÏîÄ¿²ÉÓÃTesseract V3.01°æ±¾(V3.02°æ±¾ÔÚÑµÁ·Ê±ÓĞ¸Ä¶¯£¬¶àshapeclustering¹ı³Ì)
+æœ¬é¡¹ç›®é‡‡ç”¨Tesseract V3.01ç‰ˆæœ¬(V3.02ç‰ˆæœ¬åœ¨è®­ç»ƒæ—¶æœ‰æ”¹åŠ¨ï¼Œå¤šshapeclusteringè¿‡ç¨‹)  
 
-TesseractÓÃ·¨£º
-	ÅäÖÃ»·¾³±äÁ¿TESSDATA_PREFIX =¡°D:\Tesseract-ocr\¡±£¬¼´tessdataµÄÄ¿Â¼£¬ÔÚÔ´ÂëÖĞ»áµ½Õâ¸öÂ·¾¶ÏÂ²éÕÒÏàÓ¦µÄ×Ö¿âÎÄ¼şÓÃÀ´Ê¶±ğ¡£
-	ÃüÁî¸ñÊ½£ºtesseract imagename outputbase [-l lang] [-psm pagesegmode] [configfile...]
-	Ö»Ê¶±ğ³ÉÊı×Ö
-		tesseract imagename outputbase -l eng digits
-	½â¾öempty page!!
-		-psm N
-		7 = Treat the image as a single text line
-		tesseract imagename outputbase -l eng -psm 7
-	configfile ²ÎÊıÖµÎªtessdata\configs ºÍ tessdata\tessconfigs Ä¿Â¼ÏÂµÄÎÄ¼şÃû
-		tesseract imagename outputbase -l eng nobatch
+Tesseractç”¨æ³•ï¼š  
+	é…ç½®ç¯å¢ƒå˜é‡TESSDATA_PREFIX =â€œD:\Tesseract-ocr\â€ï¼Œå³tessdataçš„ç›®å½•ï¼Œåœ¨æºç ä¸­ä¼šåˆ°è¿™ä¸ªè·¯å¾„ä¸‹æŸ¥æ‰¾ç›¸åº”çš„å­—åº“æ–‡ä»¶ç”¨æ¥è¯†åˆ«ã€‚  
+	å‘½ä»¤æ ¼å¼ï¼štesseract imagename outputbase [-l lang] [-psm pagesegmode] [configfile...]  
+	åªè¯†åˆ«æˆæ•°å­—  
+		tesseract imagename outputbase -l eng digits  
+	è§£å†³empty page!!  
+		-psm N  
+		7 = Treat the image as a single text line  
+		tesseract imagename outputbase -l eng -psm 7  
+	configfile å‚æ•°å€¼ä¸ºtessdata\configs å’Œ tessdata\tessconfigs ç›®å½•ä¸‹çš„æ–‡ä»¶å  
+		tesseract imagename outputbase -l eng nobatch  
 
-ÑéÖ¤ÂëÊ¶±ğÏîÄ¿Ê¹ÓÃ·½·¨1£º
-	½«ÏÂÔØµÄÍ¼Æ¬·Åµ½./picÄ¿Â¼ÏÂ£¬
-		ÑéÖ¤ÂëÍ¼Æ¬Ãû³Æ£ºget_random.jpg
-		¼Û¸ñÍ¼Æ¬Ãû³Æ£ºget_price_img.png
-	ÃüÁî¸ñÊ½£º
-		ÑéÖ¤ÂëÍ¼Æ¬Ê¶±ğ£ºpython tess_test.py ./pic/get_random.jpg
-		¼Û¸ñÍ¼Æ¬Ê¶±ğ£ºpython tess_test.py ./pic/get_price_img.png
-	´òÓ¡³öÊ¶±ğµÄ½á¹û£¬ÈôÒª½«½á¹û´æÔÚÁÙÊ±ÎÄ±¾ÎÄ¼ştemp.txtÖĞ£¬ÔòĞŞ¸Äpytessr_pro.pyÖĞ´úÂë"cleanup_scratch_flag = True"¸ÄÎª"cleanup_scratch_flag = False"
+éªŒè¯ç è¯†åˆ«é¡¹ç›®ä½¿ç”¨æ–¹æ³•1ï¼š  
+	å°†ä¸‹è½½çš„å›¾ç‰‡æ”¾åˆ°./picç›®å½•ä¸‹ï¼Œ  
+		éªŒè¯ç å›¾ç‰‡åç§°ï¼šget_random.jpg  
+		ä»·æ ¼å›¾ç‰‡åç§°ï¼šget_price_img.png  
+	å‘½ä»¤æ ¼å¼ï¼š  
+		éªŒè¯ç å›¾ç‰‡è¯†åˆ«ï¼špython tess_test.py ./pic/get_random.jpg  
+		ä»·æ ¼å›¾ç‰‡è¯†åˆ«ï¼špython tess_test.py ./pic/get_price_img.png  
+	æ‰“å°å‡ºè¯†åˆ«çš„ç»“æœï¼Œè‹¥è¦å°†ç»“æœå­˜åœ¨ä¸´æ—¶æ–‡æœ¬æ–‡ä»¶temp.txtä¸­ï¼Œåˆ™ä¿®æ”¹pytessr_pro.pyä¸­ä»£ç "cleanup_scratch_flag = True"æ”¹ä¸º"cleanup_scratch_flag = False"
