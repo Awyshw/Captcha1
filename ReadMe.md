@@ -11,7 +11,7 @@ Tesseract用法：
 
     7 = Treat the image as a single text line  
     tesseract imagename outputbase -l eng -psm 7  
-* configfile 参数值为tessdata\configs 和 tessdata\tessconfigs 目录下的文件名： 
+* configfile 参数值为tessdata\configs 和 tessdata\tessconfigs 目录下的文件名：   
 `tesseract imagename outputbase -l eng nobatch`  
 
 
